@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <title>BoolzApp</title>
+</head>
+<body>
+
+
+  <div class="window-wrapper">
+
+    <!-- LEFT WINDOW -->
+    <div class="left-window">
+
+      <!-- Row 1 left -->
+      <div class="row1-left">
+        <div class="user-icon">
+          <img src="img/utenti/utente1.png" alt="Immagine del contatto">
+        </div>
+        <div class="icons-row1">
+          <img src="img/stato.svg" alt="">
+        </div>
+        <div class="icons-row1">
+          <img src="img/nuova-chat.svg" alt="">
+        </div>
+        <div class="icons-row1">
+          <img src="img/menu.svg" alt="">
+        </div>
+      </div> <!-- close row1-left -->
+
+      <!-- Row 2 left -->
+      <div class="row2-left">
+        <div class="icon-notifiche">
+          <img src="img/notifiche.svg" alt="utente1">
+        </div>
+        <div class="row2-left-text">
+          <p>Ricevi notifiche di nuovi messaggi</p>
+          <p>Attiva notifiche desktop<img src="img/arrow.svg" alt=""></p>
+        </div>
+      </div> <!-- close row2-left -->
+
+      <!-- Row 3 left search -->
+      <div class="row3-left-search">
+        <div class="input-bg">
+          <div class="icon-input">
+            <img src="img/search.svg" alt="">
+            <img class="d-none" src="img/svgexport-6.svg" alt="">
+          </div>
+          <input class="search" type="text" name="" value="" placeholder="Cerca una chat">
+        </div>
+
+      </div><!-- close row3 left search -->
+
+      <!-- Row 4 left users -->
+      <div class="row4-left-users">
+
+        <div class="users active" data-contact="0">
+          <img src="img/utenti/utente2.png" alt="">
+          <div class="row4-text">
+            <h4>Matilde</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="1">
+          <img src="img/utenti/utente3.png" alt="">
+          <div class="row4-text">
+            <h4>Francesco</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="2">
+          <img src="img/utenti/utente4.png" alt="">
+          <div class="row4-text">
+            <h4>Antonio</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="3">
+          <img src="img/utenti/utente5.png" alt="">
+          <div class="row4-text">
+            <h4>Davide</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="4">
+          <img src="img/utenti/utente6.png" alt="">
+          <div class="row4-text">
+            <h4>Andrea</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="5">
+          <img src="img/utenti/utente7.png" alt="">
+          <div class="row4-text">
+            <h4>Marta</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="6">
+          <img src="img/utenti/utente8.png" alt="">
+          <div class="row4-text">
+            <h4>Sara</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+        <div class="users" data-contact="7">
+          <img src="img/utenti/utente9.png" alt="">
+          <div class="row4-text">
+            <h4>Claudia</h4>
+            <p>Non poteva essere altrimenti</p>
+          </div>
+          <time class="row4-time">12.25</time>
+        </div>
+
+      </div> <!-- close row 4 left users -->
+
+    </div> <!-- close left window -->
+
+    <!-- RIGHT WINDOW -->
+    <div class="right-window">
+
+      <!-- Row 1 right -->
+      <div class="row1-right">
+        <div class="user-icon-right">
+          <img src="img/utenti/utente2.png" alt="Immagine del contatto">
+        </div>
+        <div class="row1-right-text">
+          <h4>Matilde</h4>
+          <p>Ultimo accesso oggi alle 15:30</p>
+        </div>
+
+        <div class="icons-row1">
+          <img src="img/search-big.svg" alt="">
+        </div>
+        <div class="icons-row1">
+          <img src="img/svgexport-35.svg" alt="">
+        </div>
+        <div class="icons-row1">
+          <img src="img/menu.svg" alt="">
+        </div>
+      </div> <!-- close row1-left -->
+
+      <!-- Message window -->
+      <div class="message-window active-mex" data-contact="0">
+
+        <div class="message-wrapper received">
+          <p class="box-message">Hey, ciao come stai?</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Bene, grazie</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="1">
+
+        <div class="message-wrapper received">
+          <p class="box-message">pur ricorrendo, all'occorrenza, a nuove formulazioni del problema</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">prefigura una soluzione operativa del problema relativo alla forma delle galassie</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="2">
+
+        <div class="message-wrapper received">
+          <p class="box-message">prefigura una soluzione operativa del problema relativo alla forma delle galassie</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Ottimo!</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="3">
+
+        <div class="message-wrapper received">
+          <p class="box-message">e una stima anche superficiale dei possibili effetti di sincrotrone</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Complimenti!!</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="4">
+
+        <div class="message-wrapper received">
+          <p class="box-message">che nell'astrofisica moderna giocano un ruolo sempre più essenziale.</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Certamente...</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="5">
+
+        <div class="message-wrapper received">
+          <p class="box-message">e una sufficientemente e accurata determinazione dei campi gravitazionali</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Esattamente.</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="6">
+
+        <div class="message-wrapper received">
+          <p class="box-message">Famo du spaghi?</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Anche tre...</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+      <div class="message-window" data-contact="7">
+
+        <div class="message-wrapper received">
+          <p class="box-message">purché non si dimentichi il principio di sovrapposizione</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete left-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.25</time>
+        </div>
+
+        <div class="message-wrapper sent">
+          <p class="box-message">Non sia mai... 🤪</p>
+          <div class="arrow-down">
+            <img src="img/svgexport-42.svg" alt="">
+          </div>
+          <div class="dropdown-delete right-mex d-none">
+            <ul>
+              <li>Message info</li>
+              <li class="delete">Delete message</li>
+            </ul>
+          </div>
+          <time class="message-time">12.27</time>
+        </div>
+
+      </div><!-- Close Message window -->
+
+      <!--  ************** Message template ************** -->
+      <div class="message-wrapper d-none">
+        <p class="box-message"></p>
+        <div class="arrow-down">
+          <img src="img/svgexport-42.svg" alt="">
+        </div>
+        <div class="dropdown-delete d-none">
+          <ul>
+            <li>Message info</li>
+            <li class="delete">Delete message</li>
+          </ul>
+        </div>
+        <time class="message-time">12.27</time>
+      </div><!-- ************** close template************** -->
+
+      <!-- Send Message bar -->
+      <div class="send-message-bar">
+        <div class="emoticons-icon">
+          <img src="img/svgexport-48.svg" alt="">
+        </div>
+        <div class="input-message-bg">
+          <input class="mex" type="text" name="" value="" placeholder="Scrivi un messaggio">
+        </div>
+        <div class="send-message-icons">
+          <img class="vocal-icon" src="img/svgexport-51.svg" alt="">
+          <img class="send-icon d-none" src="img/invia.svg" alt="">
+        </div>
+      </div> <!-- Close Send Message bar -->
+
+
+    </div><!-- close right window -->
+
+  </div><!-- close window wrapper -->
+
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+</html>
